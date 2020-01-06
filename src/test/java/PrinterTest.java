@@ -20,4 +20,10 @@ public class PrinterTest {
         printer.print(5, 1);
         assertEquals(5, printer.getSheets());
     }
+
+    @Test
+    public void printerCantPrintNoPaper() {
+        printer.print(5, 3);
+        assertEquals(10, printer.getSheets());
+    }
 }
