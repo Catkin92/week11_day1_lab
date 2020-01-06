@@ -14,4 +14,9 @@ public class CalculatorTest {
     public void canAdd() {
         assertEquals(10.00, calculator.add(5.00, 5.00), 0.01);
     }
+
+    @Test
+    public void canSubtract() {
+        assertEquals(10.00, calculator.subtract(15.00, 5.00), 0.01);
+    }
 }
