@@ -12,6 +12,8 @@ public class Printer {
 
     public void print(int pages, int copies) {
         int totalPrinted = pages * copies;
-        this.sheets -= totalPrinted;
+        if (totalPrinted <= this.sheets) {
+            this.sheets -= totalPrinted;
+        }
     }
 }
